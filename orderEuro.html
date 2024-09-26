@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Order Euros - Bank Hapoalim</title>
+    <style>
+        /* General reset and body styling */
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: #f5f5f5;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+
+        /* Main container styling */
+        .container {
+            background-color: #ffffff;
+            padding: 40px;
+            border-radius: 10px;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+            max-width: 400px;
+            width: 90%; /* Responsive width */
+            text-align: center;
+        }
+
+        /* Title and text styling */
+        h1 {
+            font-size: 24px;
+            color: #2c3e50;
+            margin-bottom: 20px;
+        }
+
+        p {
+            font-size: 16px;
+            color: #34495e;
+        }
+
+        /* Button styling */
+        button {
+            background-color: #0074d9;
+            color: white;
+            padding: 15px 40px;
+            font-size: 16px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            margin-top: 20px;
+            transition: background-color 0.3s ease;
+        }
+
+        button:hover {
+            background-color: #005bb5;
+        }
+
+        /* Message styling */
+        #message {
+            margin-top: 30px;
+            font-size: 18px;
+            color: #27ae60;
+            display: none;
+        }
+
+        /* Logo styling */
+        .logo {
+            margin-bottom: 20px;
+        }
+
+        .logo img {
+            width: 150px;
+            height: auto; /* Makes sure the image scales correctly */
+        }
+
+        /* Footer styling */
+        footer {
+            margin-top: 40px;
+            font-size: 12px;
+            color: #7f8c8d;
+        }
+
+        /* Responsive Design */
+        @media (max-width: 600px) {
+            h1 {
+                font-size: 20px;
+            }
+
+            p {
+                font-size: 14px;
+            }
+
+            button {
+                padding: 12px 30px;
+                font-size: 14px;
+            }
+
+            #message {
+                font-size: 16px;
+            }
+
+            .container {
+                padding: 20px;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <div class="logo">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/2/2a/Bank_Hapoalim_logo.svg/2560px-Bank_Hapoalim_logo.svg.png" alt="Bank Hapoalim Logo">
+        </div>
+        <h1>Order Your Euros</h1>
+        <p>Click the button below to place your order for Euros. Your money will be ready for pickup at the designated airport area.</p>
+        <button onclick="orderEuros()">Order Now</button>
+        <p id="message">Successfully ordered! Your Euros will be ready for pickup at the airport's designated area.</p>
+    </div>
+
+    <footer>
+        © 2024 Bank Hapoalim. All rights reserved.
+    </footer>
+
+    <script>
+        function orderEuros() {
+            document.getElementById("message").style.display = "block";
+        }
+    </script>
+
+</body>
+</html>
